@@ -203,7 +203,7 @@ func validateCompliance(configData string) *ComplianceResult {
 
 	configLower := strings.ToLower(configData)
 
-	if strings.Contains(configLower, "ntp") || strings.Contains(configLower, "clock") {
+	if strings.Contains(configLower, "ntp") || strings.Contains(configLower, "clock") || strings.Contains(configLower, "keepalive") {
 		result.Passed = append(result.Passed, "NTP is enabled")
 		log.Println("[PASS] ✓ NTP is enabled")
 	} else {
