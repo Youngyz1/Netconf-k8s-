@@ -8,7 +8,7 @@ First, clone the existing repository and set up your local environment.
 
 ```bash
 cd /home/kali/projets_plan
-git clone https://github.com/xAPT42/netconf-k8s.git
+git clone https://github.com/youngyz1/netconf-k8s.git
 cd netconf-k8s
 ```
 
