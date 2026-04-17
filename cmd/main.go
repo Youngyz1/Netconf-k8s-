@@ -99,7 +99,6 @@ func runComplianceCheck(config Config) (*ComplianceResult, error) {
 	}
 
 	log.Println("[INFO] Configuration retrieved successfully")
-    log.Printf("[DEBUG] Raw config: %s\n", configData)
     log.Println("[INFO] Validating compliance rules...")
 
 	result := validateCompliance(configData)
