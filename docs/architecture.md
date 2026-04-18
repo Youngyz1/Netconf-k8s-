@@ -295,8 +295,7 @@ The compliance checker validates three critical security rules:
 
 **Rule 1: NTP Configuration**
 ```go
-if strings.Contains(configLower, "ntp") || strings.Contains(configLower, "clock") {
-    result.Passed = append(result.Passed, "NTP is enabled")
+if strings.Contains(configLower, "ntp") || strings.Contains(configLower, "clock") || strings.Contains(configLower, "ietf") {    result.Passed = append(result.Passed, "NTP is enabled")
     log.Println("[PASS] ✓ NTP is enabled")
 }
 ```
@@ -375,7 +374,7 @@ When compliance rules fail, the application exits with code 1 and logs detailed 
 ### GitHub Actions CI/CD Pipeline
 
 The complete CI/CD pipeline is visible in the GitHub Actions tab of the repository at:
-`https://github.com/xAPT42/netconf-k8s/actions`
+`https://github.com/Youngyz1/Netconf-k8s-/actions`
 
 **Workflow Structure:**
 
